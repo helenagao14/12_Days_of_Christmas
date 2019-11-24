@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        connect();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -32,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button playbtn = findViewById(R.id.play);
+
+    }
+    private void connect() {
+
+        // Make any "loading" UI adjustments you like
+        // Use WebApi.startRequest to fetch the games lists
+        // In the response callback, call setUpUi with the received data
+        WebApi.startRequest(this, WebApi.API_BASE + "/games", response -> {
+            // Code in this handler will run when the request completes successfully
+            // Do something with the response?
+            //the response object will contain the response data as a JsonObject if the endpoint returns a result,
+            setUpUi(response.getAsJsonObject());
+        }, error -> {
+            System.out.println("Does not work");
+            // Code in this handler will run if the request fails
+            // Maybe notify the user of the error?
+
+        });
     }
 
     @Override
