@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">12 Days of Christmas</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="twelve_days">
+        <item>christmas</item> //christmas day
+        <item>reindeer</item> //one day before christmas
+        <item>snow</item> //two days before christmas
+        <item>winter</item> //three days before christmas
+        <item>bells</item> // four days before christmas
+        <item>snowflakes</item> //five days before christmas
+        <item>santa</item> //six days before christmas
+        <item>december</item> // seven days before christmas
+        <item>jolly</item> // eight days before christmas
+        <item>dasher</item> //nine days before christmas
+        <item>angels</item> // ten days before christmas
+        <item>sled</item> // eleven days before christmas
+    </string-array>
+</resources>
