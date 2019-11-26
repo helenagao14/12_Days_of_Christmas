@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             obj.put("Content-Type", "application/json");
             obj.put("Authorization", "Bearer " +
                     "BQDxIUumViaQXayd7alLjHQejbakpdRTsu_fZI76vkl19C4f88jz78eBqxqQI-uqF1IL-L8wUw5QVdQaRrUa-OReFZAcXmKbDGyVRkvuhuyUXGCWPy-VTJwgwmoXLKsLuAmdAQ0lCcrGu4z1jY-QwlMvm8V-");
-       
+
             sendRequest(obj);
 
         } catch (JSONException e) {
