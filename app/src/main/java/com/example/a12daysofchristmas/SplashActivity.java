@@ -20,6 +20,9 @@ import com.spotify.sdk.android.authentication.AuthenticationResponse;
 
 import static com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE;
 
+//code borrowed from:
+//https://towardsdatascience.com/using-the-spotify-api-with-your-android-application-the-essentials-1a3c1bc36b9e
+
 public class SplashActivity extends AppCompatActivity {
 
     private SharedPreferences.Editor editor;
