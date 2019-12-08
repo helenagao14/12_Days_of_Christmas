@@ -2,7 +2,7 @@
     <string name="app_name">12 Days of Christmas</string>
     <string name="action_settings">Settings</string>
     <string-array name="twelve_days">
-        <item>christmas</item>
+        <item>white christmas</item>
         //christmas day
         <item>reindeer</item>
         //one day before christmas

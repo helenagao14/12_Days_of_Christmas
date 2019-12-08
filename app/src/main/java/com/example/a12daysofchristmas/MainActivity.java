@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("1");
+
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
         //Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
-System.out.println("2");
+        System.out.println("2");
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +97,8 @@ System.out.println("2");
 
 
     }
+    //code borrowed from for addDays
+    //https://stackoverflow.com/questions/428918/how-can-i-increment-a-date-by-one-day-in-java
 
         public Date addDays(Date date, int days)
         {
@@ -179,6 +181,8 @@ System.out.println("2");
             sendRequest(obj,search);
 
     }
+    //general code structured borrowed from:
+//https://towardsdatascience.com/using-the-spotify-api-with-your-android-application-the-essentials-1a3c1bc36b9e
 
 
     void sendRequest(Map<String,String> obj,String search)
